@@ -1,0 +1,30 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
+if [ ! -f /.flatpak-info ]; then
+  export PS1='$(echo -e "\[\033[0m\033[2m\033[40m\] $USER@$HOSTNAME:\[\033[44m\]$(pwd) \[\033[0m\033[32m\] $ \[\033[0m\]")'
+fi
+
+alias l="ls -F --color=auto"
+alias ll="ls -lF --color=auto"
+
+[ -f ~/.bashrc.local.sh ] && . ~/.bashrc.local.sh
+
+export PATH="$HOME/bin:$PATH"
+export PATH="$PATH:/home/ryan/.komodoide/12.0/XRE/state" # ActiveState State Tool
+
+export PATH="$PATH:/home/ryan/.var/app/com.activestate.KomodoIDE/data/komodoide/12.0/XRE/state" # ActiveState State Tool
+
+export PATH="$PATH:/home/ryan/.var/app/com.activestate.KomodoIDE/data/komodoide/12.0/XRE/state" # ActiveState State Tool
+
+#export PATH="$HOME/depot_tools:$PATH"
+source "$HOME/.cargo/env"

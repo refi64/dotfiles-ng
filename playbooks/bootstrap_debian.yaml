@@ -1,0 +1,6 @@
+- name: Install required packages
+  apt:
+    name:
+      - python3-pip
+      - zsh
+    update_cache: yes

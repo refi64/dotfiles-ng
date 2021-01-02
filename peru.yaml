@@ -1,0 +1,45 @@
+imports:
+  # dotter-linux: external/dotter
+  # dotter-win: external/dotter
+
+  oh-my-zsh: external/oh-my-zsh
+
+  powerlevel10k: external/powerlevel10k
+
+  nix-completions: external/zsh-plugins/nix-completions
+  nix-shell: external/zsh-plugins/nix-shell
+  zsh-autosuggestions: external/zsh-plugins/zsh-autosuggestions
+  zsh-syntax-highlighting: external/zsh-plugins/zsh-syntax-highlighting
+
+# curl module dotter-linux:
+#   url: https://github.com/SuperCuber/dotter/releases/download/v0.10.9/dotter
+#   sha1: 805e96fa3e92ef2a0876151dade4f2a191b5f2ac
+#   executable: dotter
+
+# curl module dotter-win:
+#   url: https://github.com/SuperCuber/dotter/releases/download/v0.10.9/dotter.exe
+#   sha1: 9f554686c1c6495769f5421b1e3f6016ac3c274a
+
+git module nix-completions:
+  url: https://github.com/spwhitt/nix-zsh-completions
+  rev: a41feb4dae703332643bca0830798fe95f2c8687
+
+git module nix-shell:
+  url: https://github.com/chisui/zsh-nix-shell
+  rev: 5dc081265cdd0d03631e9dc20b5e656530ae3af2
+
+git module oh-my-zsh:
+  url: https://github.com/ohmyzsh/ohmyzsh.git
+  rev: 4298e89b4b0a4090e2ff5a1e2014d5a6d04fc25c
+
+git module powerlevel10k:
+  url: https://github.com/romkatv/powerlevel10k.git
+  rev: d524164020a91a04e8f1982ef5e57d434ef04dfb
+
+git module zsh-autosuggestions:
+  url: https://github.com/zsh-users/zsh-autosuggestions
+  rev: ae315ded4dba10685dbbafbfa2ff3c1aefeb490d
+
+git module zsh-syntax-highlighting:
+  url: https://github.com/zsh-users/zsh-syntax-highlighting
+  rev: 5eb494852ebb99cf5c2c2bffee6b74e6f1bf38d0

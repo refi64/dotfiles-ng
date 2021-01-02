@@ -1,0 +1,16 @@
+- hosts: 127.0.0.1
+  connection: local
+  gather_facts: true
+
+  tasks:
+    - include_tasks: 'bootstrap_{{ ansible_distribution | lower }}.yaml'
+
+    - name: Install pipx
+      pip:
+        name: pipx
+        extra_args: --user
+
+    - name: Install peru
+      pip:
+        name: peru
+        executable: pipx
