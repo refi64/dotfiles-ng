@@ -24,23 +24,23 @@ imports:
 
 git module nix-completions:
   url: https://github.com/spwhitt/nix-zsh-completions
-  rev: a41feb4dae703332643bca0830798fe95f2c8687
+  rev: 468d8cf752a62b877eba1a196fbbebb4ce4ebb6f
 
 git module nix-shell:
   url: https://github.com/chisui/zsh-nix-shell
-  rev: 5dc081265cdd0d03631e9dc20b5e656530ae3af2
+  rev: b6ac21e77d6d8e48f6ac08842345c8c9cd3460d5
 
 git module nvm:
   url: https://github.com/nvm-sh/nvm
-  rev: d9b11ba20843c8bc10772157571a67b9076b7ba5
+  rev: 1081ed161b9d62b975c6253ebc146e3de0dc8c66
 
 git module oh-my-zsh:
   url: https://github.com/ohmyzsh/ohmyzsh.git
-  rev: 4298e89b4b0a4090e2ff5a1e2014d5a6d04fc25c
+  rev: 0ab87c26c17171ae6162ff379a0c704fa57dff2e
 
 git module powerlevel10k:
   url: https://github.com/romkatv/powerlevel10k.git
-  rev: d524164020a91a04e8f1982ef5e57d434ef04dfb
+  rev: d28e84ca7061c43c49c91059d15b49bc5859a3a7
 
 git module zsh-autosuggestions:
   url: https://github.com/zsh-users/zsh-autosuggestions
@@ -48,4 +48,4 @@ git module zsh-autosuggestions:
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting
-  rev: 5eb494852ebb99cf5c2c2bffee6b74e6f1bf38d0
+  rev: e8517244f7d2ae4f9d979faf94608d6e4a74a73e
