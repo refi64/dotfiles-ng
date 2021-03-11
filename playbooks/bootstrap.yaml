@@ -13,4 +13,4 @@
     - name: Install peru
       pip:
         name: peru
-        executable: pipx
+        executable: '{{ ansible_env.HOME }}/.local/bin/pipx'

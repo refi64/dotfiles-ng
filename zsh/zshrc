@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+#
+[[ -n "$XDG_RUNTIME_DIR" ]] || export XDG_RUNTIME_DIR=/run/user/$UID
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.local/share/oh-my-zsh"
@@ -207,3 +209,6 @@ pywork() {
 if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+export NVM_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

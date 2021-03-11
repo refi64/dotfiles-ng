@@ -11,6 +11,8 @@ imports:
   zsh-autosuggestions: external/zsh-plugins/zsh-autosuggestions
   zsh-syntax-highlighting: external/zsh-plugins/zsh-syntax-highlighting
 
+  nvm: external/nvm
+
 # curl module dotter-linux:
 #   url: https://github.com/SuperCuber/dotter/releases/download/v0.10.9/dotter
 #   sha1: 805e96fa3e92ef2a0876151dade4f2a191b5f2ac
@@ -27,6 +29,10 @@ git module nix-completions:
 git module nix-shell:
   url: https://github.com/chisui/zsh-nix-shell
   rev: 5dc081265cdd0d03631e9dc20b5e656530ae3af2
+
+git module nvm:
+  url: https://github.com/nvm-sh/nvm
+  rev: d9b11ba20843c8bc10772157571a67b9076b7ba5
 
 git module oh-my-zsh:
   url: https://github.com/ohmyzsh/ohmyzsh.git
