@@ -125,7 +125,7 @@ alias ip='ip -c'
 
 setopt extendedglob
 
-export PATH=$HOME/bin:$HOME/cloud/bin:/var/lib/bluecap/exports/bin:$HOME/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:$HOME/.cargopak/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.yarn/bin:$HOME/Android/Sdk/platform-tools:$PATH:$HOME/depot_tools:$HOME/code/netpull/bazel-bin:$HOME/.pub-cache/bin:$HOME/go/bin:$HOME/dart/bin:$HOME/flutter/bin
+export PATH=$HOME/bin:$HOME/cloud/bin:/var/lib/bluecap/exports/bin:$HOME/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:$HOME/.cargopak/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.yarn/bin:$HOME/Android/Sdk/platform-tools:$PATH:$HOME/depot_tools:$HOME/code/netpull/bazel-bin:$HOME/.pub-cache/bin:$HOME/go/bin:$HOME/dart/bin:$HOME/flutter/bin:$HOME/crystal/bin
 if [[ -d /usr/lib/dart/bin ]]; then
   export PATH="$PATH:/usr/lib/dart/bin"
 fi
@@ -212,3 +212,5 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 export NVM_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+#[ -d ~/code/emsdk ] && . ~/code/emsdk/emsdk_env.sh 2>/dev/null
