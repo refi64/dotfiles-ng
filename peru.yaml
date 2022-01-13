@@ -23,8 +23,8 @@ imports:
 #   sha1: 9f554686c1c6495769f5421b1e3f6016ac3c274a
 
 git module fast-syntax-highlighting:
-  url: https://github.com/zdharma/fast-syntax-highlighting
-  rev: 817916dfa907d179f0d46d8de355e883cf67bd97
+  url: https://github.com/zdharma-continuum/fast-syntax-highlighting
+  rev: 585c089968caa1c904cbe926ff04a1be9e3d8f42
 
 git module nix-completions:
   url: https://github.com/spwhitt/nix-zsh-completions
@@ -32,19 +32,19 @@ git module nix-completions:
 
 git module nix-shell:
   url: https://github.com/chisui/zsh-nix-shell
-  rev: b6ac21e77d6d8e48f6ac08842345c8c9cd3460d5
+  rev: f8574f27e1d7772629c9509b2116d504798fe30a
 
 git module nvm:
   url: https://github.com/nvm-sh/nvm
-  rev: 1081ed161b9d62b975c6253ebc146e3de0dc8c66
+  rev: 6cfaede5a03cd4aa5d374d4c199bc1c18defa2e5
 
 git module oh-my-zsh:
   url: https://github.com/ohmyzsh/ohmyzsh.git
-  rev: 11e22ed0b5c1aebd6e990ea7a885bdf03ab6555a
+  rev: 93cea53618ebd3f108275c88c948f790492337b4
 
 git module powerlevel10k:
   url: https://github.com/romkatv/powerlevel10k.git
-  rev: 32e76e772173f1d2856ee4002f21607523221ce7
+  rev: fdbde52c201569afc53229412fea11aae87d6bc8
 
 git module zsh-autosuggestions:
   url: https://github.com/zsh-users/zsh-autosuggestions
