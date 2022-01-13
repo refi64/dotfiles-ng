@@ -27,4 +27,5 @@ export PATH="$PATH:/home/ryan/.var/app/com.activestate.KomodoIDE/data/komodoide/
 export PATH="$PATH:/home/ryan/.var/app/com.activestate.KomodoIDE/data/komodoide/12.0/XRE/state" # ActiveState State Tool
 
 #export PATH="$HOME/depot_tools:$PATH"
-source "$HOME/.cargo/env"
+
+[[ -f ~/.cargo/env ]] && source "$HOME/.cargo/env"

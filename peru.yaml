@@ -6,10 +6,10 @@ imports:
 
   powerlevel10k: external/powerlevel10k
 
+  fast-syntax-highlighting: external/zsh-plugins/fast-syntax-highlighting
   nix-completions: external/zsh-plugins/nix-completions
   nix-shell: external/zsh-plugins/nix-shell
   zsh-autosuggestions: external/zsh-plugins/zsh-autosuggestions
-  zsh-syntax-highlighting: external/zsh-plugins/zsh-syntax-highlighting
 
   nvm: external/nvm
 
@@ -21,6 +21,10 @@ imports:
 # curl module dotter-win:
 #   url: https://github.com/SuperCuber/dotter/releases/download/v0.10.9/dotter.exe
 #   sha1: 9f554686c1c6495769f5421b1e3f6016ac3c274a
+
+git module fast-syntax-highlighting:
+  url: https://github.com/zdharma/fast-syntax-highlighting
+  rev: 817916dfa907d179f0d46d8de355e883cf67bd97
 
 git module nix-completions:
   url: https://github.com/spwhitt/nix-zsh-completions
@@ -36,16 +40,12 @@ git module nvm:
 
 git module oh-my-zsh:
   url: https://github.com/ohmyzsh/ohmyzsh.git
-  rev: 0ab87c26c17171ae6162ff379a0c704fa57dff2e
+  rev: 11e22ed0b5c1aebd6e990ea7a885bdf03ab6555a
 
 git module powerlevel10k:
   url: https://github.com/romkatv/powerlevel10k.git
-  rev: d28e84ca7061c43c49c91059d15b49bc5859a3a7
+  rev: 32e76e772173f1d2856ee4002f21607523221ce7
 
 git module zsh-autosuggestions:
   url: https://github.com/zsh-users/zsh-autosuggestions
-  rev: ae315ded4dba10685dbbafbfa2ff3c1aefeb490d
-
-git module zsh-syntax-highlighting:
-  url: https://github.com/zsh-users/zsh-syntax-highlighting
-  rev: e8517244f7d2ae4f9d979faf94608d6e4a74a73e
+  rev: a411ef3e0992d4839f0732ebeb9823024afaaaa8

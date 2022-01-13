@@ -65,9 +65,11 @@ ZSH_CUSTOM="$HOME/.local/share/oh-my-zsh-custom"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-syntax-highlighting
+  fast-syntax-highlighting
+  #zsh-syntax-highlighting
   zsh-autosuggestions
   nix-shell
+  asdf
 )
 
 if [ -e $ZSH_CUSTOM/plugins/bk-zsh ]; then
@@ -75,6 +77,9 @@ if [ -e $ZSH_CUSTOM/plugins/bk-zsh ]; then
   BK_ZSH_P9K_INTEGRATION=true
   BK_ZSH_SHOW_SAME_BRANCH=true
 fi
+
+export ASDF_DIR=$HOME/asdf
+export ASDF_DATA_DIR=$HOME/.local/share/asdf
 
 source $ZSH/oh-my-zsh.sh
 
@@ -214,3 +219,10 @@ export NVM_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 #[ -d ~/code/emsdk ] && . ~/code/emsdk/emsdk_env.sh 2>/dev/null
+
+if [[ "$TERM" == "alacritty" && ! -f /usr/share/terminfo/a/alacritty ]]; then
+  export TERM=xterm-256color
+fi
+
+export PATH=$HOME/.nimble/bin:"$PATH"
+:
